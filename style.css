@@ -1,0 +1,110 @@
+/* default */
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body */
+body {
+  font-family: "Sofia Sans", sans-serif;
+  /* font-family: "Cinzel Decorative", cursive; */
+}
+/* navigation */
+
+.nav_holder {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+/* again_button */
+.again_button {
+  padding: 1% 1.5%;
+  font-size: 20px;
+  color: white;
+  background: black;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+  font-family: "Sofia Sans", sans-serif;
+  /* add interesting font family */
+}
+
+.again_button:hover {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* discription */
+.discription {
+  font-size: 20px;
+}
+
+/* header */
+.header {
+  display: block;
+  /* padding-top: 10%; */
+}
+/* title */
+.title {
+  font-size: 90px;
+  text-align: center;
+  padding-top: 7%;
+}
+
+/* correct_number */
+
+.number {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 80px;
+  width: 100px;
+  height: 100px;
+  margin: 3% auto 0;
+}
+
+/* main_section */
+.main_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10% 10% 0;
+}
+
+/* left_part */
+.left_part {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+}
+.number_input {
+  text-align: center;
+  font-size: 50px;
+  max-width: 200px;
+  margin-bottom: 10%;
+  border-radius: 10px;
+}
+
+.check {
+  font-size: 22px;
+  padding: 8% 3%;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.2s linear;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+.check:hover {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/* right_part */
+.right_part {
+  font-size: 40px;
+  line-height: 4rem;
+}
