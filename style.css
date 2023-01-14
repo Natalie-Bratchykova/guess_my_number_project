@@ -11,6 +11,7 @@
 /* body */
 body {
   font-family: "Sofia Sans", sans-serif;
+  font-size: 20px;
   /* font-family: "Cinzel Decorative", cursive; */
 }
 /* navigation */
@@ -26,23 +27,23 @@ body {
 /* again_button */
 .again_button {
   padding: 1% 1.5%;
-  font-size: 20px;
+  font-size: 1rem;
   color: white;
   background: black;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   transition: all 0.2s linear;
   font-family: "Sofia Sans", sans-serif;
   /* add interesting font family */
 }
 
 .again_button:hover {
-  font-size: 22px;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
 /* discription */
 .discription {
-  font-size: 20px;
+  font-size: inherit;
 }
 
 /* header */
@@ -52,7 +53,7 @@ body {
 }
 /* title */
 .title {
-  font-size: 90px;
+  font-size: 6rem;
   text-align: center;
   padding-top: 7%;
 }
@@ -62,10 +63,14 @@ body {
 .number {
   border: 1px solid black;
   text-align: center;
-  font-size: 80px;
-  width: 100px;
-  height: 100px;
+  font-size: 4rem;
+  width: 6rem;
+  height: 6rem;
   margin: 3% auto 0;
+}
+
+.question_mark {
+  font-size: 4rem;
 }
 
 /* main_section */
@@ -82,14 +87,14 @@ body {
 }
 .number_input {
   text-align: center;
-  font-size: 50px;
-  max-width: 200px;
+  font-size: 4rem;
+  max-width: 8rem;
   margin-bottom: 10%;
-  border-radius: 10px;
+  border-radius: 0.6rem;
 }
 
 .check {
-  font-size: 22px;
+  font-size: 1rem;
   padding: 8% 3%;
   background-color: black;
   color: white;
@@ -100,11 +105,51 @@ body {
 
 .check:hover {
   cursor: pointer;
-  font-size: 25px;
+  font-size: 1.2rem;
 }
 
 /* right_part */
+div,
+span {
+  font-size: 2rem;
+}
 .right_part {
-  font-size: 40px;
+  font-size: 2rem;
   line-height: 4rem;
+}
+
+/* 400px */
+
+@media (max-width: 500px) {
+  body {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+
+  .number {
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    margin: 3% auto 0;
+  }
+  .question_mark {
+    font-size: 3rem;
+  }
+
+  .number_input {
+    font-size: 2rem;
+    max-width: 6rem;
+    margin-bottom: 10%;
+    border-radius: 0.6rem;
+  }
+
+  .check {
+    padding: 3% 1%;
+  }
+  div,
+  span {
+    font-size: 1rem;
+  }
 }
