@@ -12,10 +12,8 @@
 body {
   font-family: "Sofia Sans", sans-serif;
   font-size: 20px;
-  /* font-family: "Cinzel Decorative", cursive; */
 }
 /* navigation */
-
 .nav_holder {
   position: absolute;
   display: flex;
@@ -33,7 +31,6 @@ body {
   border-radius: 0.5rem;
   transition: all 0.2s linear;
   font-family: "Sofia Sans", sans-serif;
-  /* add interesting font family */
 }
 
 .again_button:hover {
@@ -49,7 +46,6 @@ body {
 /* header */
 .header {
   display: block;
-  /* padding-top: 10%; */
 }
 /* title */
 .title {
@@ -59,7 +55,6 @@ body {
 }
 
 /* correct_number */
-
 .number {
   border: 1px solid black;
   text-align: center;
@@ -70,14 +65,20 @@ body {
 }
 
 .question_mark {
-  font-size: 4rem;
+  font-size: 4.3rem;
 }
 
 /* main_section */
 .main_section {
   display: flex;
   justify-content: space-between;
-  padding: 10% 10% 0;
+  padding: 5% 10% 0;
+}
+
+/* messege */
+.messege {
+  text-align: center;
+  margin: 5% auto 0;
 }
 
 /* left_part */
@@ -87,7 +88,7 @@ body {
 }
 .number_input {
   text-align: center;
-  font-size: 4rem;
+  font-size: 2rem;
   max-width: 8rem;
   margin-bottom: 10%;
   border-radius: 0.6rem;
@@ -116,4 +117,349 @@ span {
 .right_part {
   font-size: 2rem;
   line-height: 4rem;
+}
+
+/*----------------- pop_up --------------------------*/
+.pop_up {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.warning_mess {
+  text-align: center;
+  background-color: white;
+  padding-top: 5%;
+  font-size: 6rem;
+}
+
+.new_game_button {
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 2rem;
+  padding: 1% 2%;
+  border-radius: 1rem;
+  border: none;
+  background: black;
+  color: white;
+  margin: 10% 40%;
+  transition: all 0.2s linear;
+}
+
+.new_game_button:hover {
+  cursor: pointer;
+  font-size: 2.2rem;
+}
+
+.disabled {
+  display: none;
+}
+
+/* ----------------------------media queries---------------------- */
+
+/* 768 px */
+@media (max-width: 800px) {
+  /* body */
+  body {
+    font-size: 15px;
+  }
+
+  /* again_button */
+  .again_button {
+    padding: 1% 1.5%;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .again_button:hover {
+    font-size: 1.2rem;
+  }
+
+  /* title */
+  .title {
+    font-size: 4rem;
+  }
+
+  /* correct_number */
+  .number {
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 3% auto 0;
+  }
+
+  .question_mark {
+    font-size: 3rem;
+  }
+
+  /*----------------- pop_up --------------------------*/
+
+  .warning_mess {
+    font-size: 4rem;
+  }
+
+  .new_game_button {
+    font-size: 1.3rem;
+    padding: 1% 2%;
+    border-radius: 0.6rem;
+    margin: 10% 36%;
+  }
+
+  .new_game_button:hover {
+    cursor: pointer;
+    font-size: 1.4rem;
+  }
+}
+/* 600 and <  */
+@media (max-width: 550px) {
+  /* body */
+  body {
+    font-size: 10px;
+  }
+  .discription {
+    font-size: 1.1rem;
+  }
+
+  /* title */
+  .title {
+    font-size: 2.6rem;
+    padding-top: 20%;
+  }
+
+  /* correct_number */
+  .number {
+    font-size: 4rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 3% auto 0;
+  }
+
+  .question_mark {
+    font-size: 4rem;
+  }
+
+  /* main_section */
+  .main_section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 10% 0;
+  }
+
+  /* messege */
+  .messege {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 5% auto;
+  }
+
+  /* left_part */
+  .left_part {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+  .number_input {
+    font-size: 2rem;
+    max-width: 8rem;
+    margin-bottom: 10%;
+    border-radius: 0.6rem;
+  }
+
+  .check {
+    font-size: 1rem;
+    padding: 8% 3%;
+    border-radius: 4px;
+  }
+
+  .check:hover {
+    font-size: 1.2rem;
+  }
+
+  /* right_part */
+  div,
+  span {
+    font-size: 1.6rem;
+  }
+  .right_part {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  .warning_mess {
+    font-size: 2.5rem;
+  }
+}
+
+/* 410px */
+@media (max-width: 410px) {
+  /* body */
+  body {
+    font-size: 10px;
+  }
+  .discription {
+    font-size: 1.1rem;
+  }
+
+  /* title */
+  .title {
+    font-size: 2.6rem;
+    padding-top: 20%;
+  }
+
+  /* correct_number */
+  .number {
+    font-size: 4rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin: 3% auto 0;
+  }
+
+  .question_mark {
+    font-size: 3.2rem;
+  }
+
+  /* main_section */
+  .main_section {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5% 25% 0;
+  }
+
+  /* messege */
+  .messege {
+    font-size: 1.4rem;
+    margin: 5% auto;
+  }
+
+  /* left_part */
+  .left_part {
+    display: flex;
+    flex-direction: column;
+  }
+  .number_input {
+    font-size: 1.5rem;
+    max-width: 18rem;
+    margin: 10% 0;
+    border-radius: 0.6rem;
+  }
+
+  .check {
+    font-size: 1.2rem;
+    padding: 8% 3%;
+  }
+
+  .check:hover {
+    font-size: 1.3rem;
+  }
+
+  /* right_part */
+  div,
+  span {
+    font-size: 1.3rem;
+  }
+  .right_part {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .warning_mess {
+    margin-top: 25%;
+    font-size: 2.1rem;
+  }
+
+  .new_game_button {
+    font-size: 0.8rem;
+    padding: 1% 2%;
+    border-radius: 0.6rem;
+    margin: 10% 36%;
+  }
+}
+
+/* 345 */
+@media (max-width: 345px) {
+  /* body */
+  body {
+    font-size: 5px;
+  }
+  .discription {
+    font-size: 0.7rem;
+  }
+
+  .again_button {
+    font-size: 0.8rem;
+  }
+
+  /* title */
+  .title {
+    font-size: 1.6rem;
+    padding-top: 20%;
+  }
+
+  /* correct_number */
+  .number {
+    font-size: 4rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    margin: 3% auto 0;
+  }
+
+  .question_mark {
+    font-size: 2.2rem;
+  }
+  /* messege */
+  .messege {
+    font-size: 1rem;
+    margin: 5% auto;
+  }
+
+  .number_input {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 15rem;
+    margin: 10% 0;
+    margin-bottom: 10%;
+    border-radius: 0.6rem;
+  }
+
+  .check {
+    font-size: 0.8rem;
+    padding: 8% 3%;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.2s linear;
+  }
+
+  .check:hover {
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  /* right_part */
+  div,
+  span {
+    font-size: 1rem;
+  }
+  .right_part {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+  }
+
+  .warning_mess {
+    font-size: 1.4rem;
+  }
+
+  .new_game_button {
+    font-size: 0.7rem;
+    padding: 1% 2%;
+    margin: 15% 36%;
+  }
+
+  .new_game_button:hover {
+    font-size: 1rem;
+  }
 }

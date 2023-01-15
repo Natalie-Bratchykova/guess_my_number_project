@@ -27,6 +27,18 @@ document.querySelector(".check").addEventListener("click", () => {
     } than mine`;
     userRating = userRating > 0 ? userRating - 1 : 0;
     document.querySelector(".current_score").innerHTML = userRating;
+    // if rating == 0
+    if (userRating === 0) {
+      document.querySelector(".pop_up").classList.remove("disabled");
+      document
+        .querySelector(".new_game_button")
+        .addEventListener("click", () => {
+          userRating = 20;
+          document.querySelector(".current_score").innerHTML = userRating;
+          document.querySelector(".highest_score").innerHTML = 0;
+          document.querySelector(".pop_up").classList.add("disabled");
+        });
+    }
   }
 });
 
