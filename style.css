@@ -118,6 +118,9 @@ span {
   line-height: 4rem;
 }
 
+/* work with responsive design */
+/* make normal display for mobile */
+/* upload all changes on git hub */
 /* 400px */
 
 @media (max-width: 500px) {
@@ -126,6 +129,7 @@ span {
   }
   .title {
     font-size: 2rem;
+    padding-top: 30%;
   }
 
   .number {
@@ -138,11 +142,19 @@ span {
     font-size: 3rem;
   }
 
+  .main_section {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+
   .number_input {
     font-size: 2rem;
     max-width: 6rem;
     margin-bottom: 10%;
     border-radius: 0.6rem;
+  }
+  .right_part {
+    line-height: 2rem;
   }
 
   .check {
